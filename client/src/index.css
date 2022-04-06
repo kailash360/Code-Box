@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'),
+    url(./fonts/JetBrainsMono[wght].ttf) format('truetype');
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 4fr 20fr 30fr;
+  gap: 5pt;
+}
