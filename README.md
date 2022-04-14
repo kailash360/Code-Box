@@ -16,7 +16,7 @@ It allows you to share your work in real time with the server, which is ideal fo
 
 ## Local Setup
 
-Documentation is available in the 'docs' folder if you want to set up the project yourself. For a thorough reference, see [DOCS.md](https://github.com/nafees87n/codebox/blob/main/docs/DOCS.md). It explains how to set up a local machine and how to use it. For deployment documentation, see [SERVER.md](https://github.com/nafees87n/codebox/blob/main/docs/SERVER.md).
+Documentation is available in the 'docs' folder if you want to set up the project yourself. For a thorough reference, see [DOCS.md](https://github.com/kailash360/Code-Box/blob/main/docs/DOCS.md). It explains how to set up a local machine and how to use it. For deployment documentation, see [SERVER.md](https://github.com/kailash360/Code-Box/blob/main/docs/SERVER.md).
 
 ## Tools & Technology
 
