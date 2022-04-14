@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  # react development server
+  client:
+    build: ./client
+    ports:
+      - '3000:3000'
+  # server container manages client requests
+  server:
+    build: ./server
+    ports:
+      - '9000:9000'
+      # localhost:9000/ for host machine
+      # server:9000/ for containers
+    volumes:
+      - userdata:/storage # mounted volume, contains user generated data
+  # executor container responds to requests from the server container
+  executor:
+    build: ./executor
+    # visible as executor:8080/ for other containers, but the app is hidden to the host
+    volumes:
+      - userdata:/storage # mounted volume, contains user generated data
+volumes:
+  # userdata volume common to all composed containers
+  userdata:
+    external: true
