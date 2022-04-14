@@ -3,7 +3,24 @@ const CONSTANTS = {
     USERSTORAGEPATH: '/storage/',
     CLIENT_URL: 'http://localhost:3000',
 
+    /*CONSTANTS FOR SOCKET*/
+    SOCKET: {
+        ORIGIN: 'http://localhost:3000',
+        METHODS: ['GET', 'POST'],
+    },
+
     /*CONSTANTS FOR CODE FILE*/
+    JS: {
+        REGEX: /require\s*\(\s*['"]\s*(.+)\s*['"]\s*\)/gim,
+        ACCEPT_LIST: [
+            'readline',
+            'buffer',
+            'string_decoder',
+            'timers',
+            'stream',
+            'util',
+        ],
+    },
     CPP: {
         REGEX: /#include\s*<([\w^h]*).?h?>/gim,
         ACCEPT_LIST: [
@@ -27,27 +44,10 @@ const CONSTANTS = {
             'ctype',
         ],
     },
-    JS: {
-        REGEX: /require\s*\(\s*['"]\s*(.+)\s*['"]\s*\)/gim,
-        ACCEPT_LIST: [
-            'readline',
-            'buffer',
-            'string_decoder',
-            'timers',
-            'stream',
-            'util',
-        ],
-    },
     PYTHON: {
         BASIC_REGEX: /import\s+(.+)/gim,
         SPECIFIC_REGEX: /import.+from\s+(.+)/gim,
         REJECT_LIST: ['os', 'subprocess', 'shlex', 'xml', 'pickle'],
-    },
-
-    /*CONSTANTS FOR SOCKET*/
-    SOCKET: {
-        ORIGIN: 'http://localhost:3000',
-        METHODS: ['GET', 'POST'],
     },
 }
 
