@@ -99,12 +99,12 @@ justify-content: space-between;
 
 .nav-btn {
     border: none;
-    padding: 3px 5px;
+    padding: 5px 8px;
     border-radius: 10px;
     border: transparent;
     outline: none;
-    margin: 5pt;
-    margin-right: 10pt;
+    margin: 5px;
+    margin-right: 10px;
     color: white;
     background: linear-gradient(to right, #B500FF, #8300F1) !important;
     cursor: pointer;
@@ -114,6 +114,14 @@ justify-content: space-between;
 .nav-btn option,
 .nav-btn h2 {
     font-family: 'Poppins';
+}
+
+.nav-btn h2 {
+    margin: 0;
+}
+
+.nav-btn option {
+    color: black;
 }
 
 .nav-btn h2 svg {
@@ -148,6 +156,7 @@ justify-content: space-between;
     padding: 0;
     padding-left: 5pt;
     padding-bottom: 5pt;
+    background: #100146;
 }
 
 #code-header {
