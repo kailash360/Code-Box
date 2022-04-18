@@ -218,7 +218,9 @@ const Homepage = () => {
       </div>
       <div className="nav">
         <h1 id="brand">
-          {'<CodeBox/>'}
+          <span style={{ color: "#B400FF" }}>{'<'}</span>
+          <span style={{ color: "#ffffff" }}>Codebox</span>
+          <span style={{ color: "#B400FF" }}>{'/>'}</span>
           {joinedSessionCode !== '' ? 'joined: ' + joinedSessionCode : ''}
         </h1>
         <div id="navigation" className="hide_menu">

@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
+
+* {
+  font-family: 'Poppins'
+}
+
 html {
   height: 100%;
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: local('JetBrains Mono'),
-    url(./fonts/JetBrainsMono[wght].ttf) format('truetype');
+  font-family: 'Poppins';
+  src: url(./fonts/Poppins[wght].ttf) format('truetype');
 }
 
 body {
