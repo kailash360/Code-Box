@@ -61,14 +61,6 @@
     width: 35%;
 }
 
-
-/* .modal-btn-bar{
-display: flex;
-flex-direction: row;
-background-color: #fefefe;
-justify-content: space-between;
-} */
-
 .modal-current-session {
     display: flex;
     flex-direction: row;
