@@ -219,7 +219,7 @@ const Homepage = () => {
       <div className="nav">
         <h1 id="brand">
           <span style={{ color: "#B400FF" }}>{'<'}</span>
-          <span style={{ color: "#ffffff" }}>Codebox</span>
+          <span style={{ color: "#ffffff" }}>codeBox</span>
           <span style={{ color: "#B400FF" }}>{'/>'}</span>
           {joinedSessionCode !== '' ? 'joined: ' + joinedSessionCode : ''}
         </h1>
@@ -313,7 +313,11 @@ const Homepage = () => {
       </div>
       <div className="code-region">
         <div id="code-header">
-          <h2 className="region-title">code</h2>
+          <h2 className="region-title">
+            <span style={{ color: "#B400FF" }}>{'<'}</span>
+            <span style={{ color: "#ffffff" }}>code</span>
+            <span style={{ color: "#B400FF" }}>{'/>'}</span>
+          </h2>
           <h2 className="region-title-divider">|</h2>
           {joinedSessionCode === '' ? (
             <>
@@ -365,7 +369,11 @@ const Homepage = () => {
       </div>
       <div className="input-region">
         <div id="code-header">
-          <h2 className="region-title">input</h2>
+          <h2 className="region-title">
+            <span style={{ color: "#B400FF" }}>{'<'}</span>
+            <span style={{ color: "#ffffff" }}>input</span>
+            <span style={{ color: "#B400FF" }}>{'/>'}</span>
+          </h2>
         </div>
         <div className="general-editor">
           <AceEditor
@@ -386,7 +394,11 @@ const Homepage = () => {
       </div>
       <div className="output-region">
         <div id="code-header">
-          <h2 className="region-title">output</h2>
+          <h2 className="region-title">
+            <span style={{ color: "#B400FF" }}>{'<'}</span>
+            <span style={{ color: "#ffffff" }}>ouput</span>
+            <span style={{ color: "#B400FF" }}>{'/>'}</span>
+          </h2>
         </div>
         <div className="general-editor">
           <AceEditor
